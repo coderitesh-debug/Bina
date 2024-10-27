@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BINA - Belgo-Indian Network for Astronomy and Astrophysics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+/* Header Logo Styling */
+.header-logo {
+    margin-left: 20px; /* Spacing from the last tab */
+    list-style-type: none; /* Remove bullet point */
+}
+
+.bina-logo {
+    height: 40px; /* Adjust the size as needed */
+    width: auto;
+    vertical-align: middle; /* Align with the other navigation items */
+}
+</style>
+
+
+</head>
+<body>
+<header>
+    <div class="header-left">
+        <h1>BINA</h1>
+        <p>Belgo-Indian Network for Astronomy & Astrophysics</p>
+    </div>
+    <div class="hamburger-menu" id="hamburger-menu"></div> <!-- Hamburger button for mobile -->
+    <nav id="nav-menu">
+    <ul style="display: flex; align-items: center;">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="partners.html">Partners</a>
+            <span class="dropdown-toggle"></span>
+            <div class="dropdown-content">
+                <div class="nested-dropdown">
+                    <a href="belgian_partners.html">Belgian Partner Institutes</a>
+                    <div class="nested-dropdown-content">
+                        <a href="ku_leuven.html">KU Leuven</a>
+                        <a href="rob.html">ROB</a>
+                        <a href="uantwerpen.html">UAntwerpen</a>
+                        <a href="ugent.html">UGent</a>
+                        <a href="ulb.html">ULB</a>
+                        <a href="uliege.html">ULiege</a>
+                    </div>
+                </div>
+                <div class="nested-dropdown">
+                    <a href="indian_partners.html">Indian Partner Institutes</a>
+                    <div class="nested-dropdown-content">
+                        <a href="aries.html">ARIES</a>
+                        <a href="du.html">DU</a>
+                        <a href="iia.html">IIA</a>
+                        <a href="iist.html">IIST</a>
+                        <a href="iucaa.html">IUCAA</a>
+                        <a href="ku.html">KU</a>
+                        <a href="ncra_tifr.html">NCRA-TIFR</a>
+                        <a href="prl.html">PRL</a>
+                        <a href="prsu.html">PRSU</a>
+                        <a href="snbncbs.html">SNBNCBS</a>
+                        <a href="tifr.html">TIFR</a>
+                        <a href="uoc.html">UOC</a>
+                        <a href="ursc.html">URSC</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="instrumentation.html">Instrumentation</a>
+            <span class="dropdown-toggle"></span>
+            <div class="dropdown-content">
+                <div class="nested-dropdown">
+                    <a href="indo_belgian_telescopes.html">Indo-Belgian Telescopes</a>
+                    <div class="nested-dropdown-content">
+                        <a href="dot_aries.html">DOT@ARIES</a>
+                        <a href="ilmt_aries.html">ILMT@ARIES</a>
+                    </div>
+                </div>
+                <div class="nested-dropdown">
+                    <a href="telescopes.html">Telescopes</a>
+                    <div class="nested-dropdown-content">
+                        <a href="trappist_south.html">TRAPPIST-SOUTH@ESO</a>
+                        <a href="trappist_north.html">TRAPPIST-North@J43</a>
+                        <a href="mercator_rmo.html">Mercator@RMO</a>
+                    </div>
+                </div>
+                <div class="nested-dropdown">
+                    <a href="indian_telescopes.html">Indian Telescopes</a>
+                    <div class="nested-dropdown-content">
+                        <a href="0_5m_prl.html">0.5-m@PRL</a>
+                        <a href="1_04m_aries.html">1.04-m@ARIES</a>
+                        <a href="1_2m_prl.html">1.2-m@PRL</a>
+                        <a href="1_3m_aries.html">1.3-m@ARIES</a>
+                        <a href="hct_iia.html">HCT@IIA</a>
+                        <a href="gmrt_ncra_tifr.html">GMRT@NCRA-TIFR</a>
+                    </div>
+                </div>
+                <div class="nested-dropdown">
+                    <a href="indian_satellite.html">Indian Satellite</a>
+                    <div class="nested-dropdown-content">
+                        <a href="astrosat.html">AstroSat</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li><a href="funding.html">Funding</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li class="dropdown">
+            <a href="projects.html">Projects</a>
+            <span class="dropdown-toggle"></span>
+            <div class="dropdown-content">
+                <a href="asteroseismology.html">Asteroseismology</a>
+                <a href="orbit.html">ORBIT</a>
+                <a href="nucleosynthesis.html">Nucleosynthesis</a>
+                <a href="multi_wavelength_study.html">Multi-wavelength Study of Massive Stars</a>
+                <a href="instrumentation.html">Instrumentation</a>
+                <a href="reverberation_mapping.html">Reverberation Mapping</a>
+            </div>
+        </li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <!-- Logo Added Here -->
+        <li class="header-logo">
+            <img src="125.png" alt="BINA Logo" class="bina-logo">
+        </li>
+    </ul>
+</nav>
+
+</header>
+<main>
+    <section class="video-section">
+        <video id="background-video" autoplay muted loop>
+            <source src="background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="welcome-message">
+            <h2>Welcome to BINA</h2>
+            <p>Explore the Universe with Us</p>
+        </div>
+    </section>
+
+    <!-- Description Section -->
+    <section class="description-section">
+        <div class="description-container">
+           
+            <h2 class="description-title">DESCRIPTION</h2>
+            <p class="description-text">
+                The Devsthal Observatory is a new astronomical site in India, located at an altitude of 2450 meters in the Kumaun region of the Himalayas in the district Nainital in the state of Uttarakhand. It is operated by the Aryabhatta Research Institute of Observational Sciences (ARIES; Nainital, India) and hosts three telescopes: a 1.3-m optical telescope and two so-called Indo-Belgian telescopes. The 3.6-m Devsthal Optical Telescope has received this status because it has been constructed by AMOS (Advanced Mechanical and Optical Systems; Liège, Belgium) with financial support of 2,000,000 € from the Belgian Federal Science Policy Office (BELSPO; Govt. of Belgium). In return for the financial aid, 7% of the telescope time of DOT is reserved for projects lead by Belgian astronomers. The 4-m International Liquid Mirror Telescope is a Belgian initiative led by members of the University of Liège in collaboration with institutes in India (ARIES; Nainital) and Canada (Québec, Montréal, Toronto, Vancouver, and Victoria).
+            </p>
+            <p class="description-text">
+                The "Belgo-Indian Network for Astronomy and Astrophysics" (BINA) was established in 2014 with the goal of fostering collaboration between Indian and Belgian astronomers (Partners). It aims to promote the optimal use of Indo-Belgian telescopes, as well as other telescopes and satellites of interest (Instrumentation), in order to maximize scientific discoveries related to solar system, galactic, and extragalactic celestial objects (Projects and Publications). Approved in 2016 by the International Division, Department of Science and Technology (DST, Govt. of India) and BELSPO, the project received funding that supported network activities such as joint workshops and work visits to strengthen collaborations and the astronomical communities in both countries (Activities). Although the initial funding has concluded, BINA continues to serve as a vital platform for stimulating Indo-Belgian collaborations in astronomical instrumentation and space sciences.            </p>
+                <div class="logo">
+                    <img src="logo.jpg" alt="logo 1">
+                </div>
+                <div class="description-images">
+                <div class="description-image-container">
+                    <img src="path_to_image1.jpg" alt="Image 1">
+                </div>
+                <div class="description-image-container">
+                    <img src="path_to_image2.jpg" alt="Image 2">
+                </div>
+                <div class="description-image-container">
+                    <img src="path_to_image3.jpg" alt="Image 3">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer-container">
+        <!-- Contact Section -->
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+          <h4>          Email: binaconsortium@gmail.com          </h4>  
+        </div>
+                  <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 BINA. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Handle Main Dropdowns
+            var dropdowns = document.querySelectorAll('.dropdown');
+
+            dropdowns.forEach(function (dropdown) {
+                var dropdownLink = dropdown.querySelector('a');
+                var dropdownContent = dropdown.querySelector('.dropdown-content');
+
+                if (dropdownContent) {
+                    dropdownLink.addEventListener('mouseenter', function () {
+                        dropdownContent.style.display = 'block';
+                    });
+
+                    dropdown.addEventListener('mouseleave', function () {
+                        dropdownContent.style.display = 'none';
+                    });
+                }
+            });
+
+            // Handle Nested Dropdowns
+            var nestedDropdowns = document.querySelectorAll('.nested-dropdown');
+
+            nestedDropdowns.forEach(function (nestedDropdown) {
+                var nestedLink = nestedDropdown.querySelector('a');
+                var nestedContent = nestedDropdown.querySelector('.nested-dropdown-content');
+
+                if (nestedContent) {
+                    nestedLink.addEventListener('mouseenter', function () {
+                        nestedContent.style.display = 'block';
+                    });
+
+                    nestedDropdown.addEventListener('mouseleave', function () {
+                        nestedContent.style.display = 'none';
+                    });
+                }
+            });
+        });
+    </script>
+
+<!-- Include the JavaScript file for dropdown and other interactions 
+</body>
+</html>

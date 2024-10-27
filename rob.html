@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Observatory of Belgium (ROB) - BINA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .highlight-box {
+            background-color: #E9F0FA; /* Light blue background */
+            padding: 15px; /* Adjusted padding for balanced spacing */
+            border-left: 4px solid #1E2A5E; /* Dark blue border */
+            margin: 15px 0;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+            text-align: center; /* Center align content */
+        }
+
+        .highlight-box h3 {
+            margin-top: 0; /* Reduce space above heading */
+            margin-bottom: 10px; /* Smaller space below heading */
+            font-size: 1.5em; /* Adjust font size for emphasis */
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #1E2A5E;
+            color: #E1D7B7;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .contact-info i {
+            margin-right: 10px;
+            font-size: 1.5em;
+        }
+
+        .astronomy-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center; /* Center align list items */
+            margin-top: 10px;
+        }
+
+        .astronomy-item {
+            background-color: #ffffff;
+            padding: 8px 12px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            flex: 1 1 45%;
+            margin-bottom: 10px;
+        }
+
+        .astronomy-item i {
+            margin-right: 8px;
+            color: #1E2A5E;
+        }
+
+        .instrumentation-content {
+            font-size: 1.1em;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .instrumentation-content div {
+            background-color: #ffffff;
+            padding: 8px 12px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .contact-info a {
+    font-weight: bold; /* Make the email address bold */
+    color: #1E90FF; /* Bright blue color for better visibility */
+    text-decoration: none; /* Remove underline from link */
+    transition: color 0.3s; /* Smooth transition on hover */
+}
+
+.contact-info a:hover {
+    color: #FF4500; /* Change to orange on hover for better interactivity */
+}
+
+.image-container {
+    position: relative; /* Make the container a positioning context */
+    display: inline-block; /* Keep the images inline */
+    margin: 20px 0; /* Adjust spacing */
+}
+
+.image-container img {
+    display: block; /* Prevent whitespace issues */
+    max-width: 100%; /* Ensure responsiveness */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.overlay-logo {
+    position: absolute;
+    bottom: 10px; /* Align to the bottom-right corner */
+    right: 10px; /* Adjust to the corner */
+    width: 80px; /* Control the size of the overlay image */
+    height: auto;
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better visibility */
+}
+
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-left">
+        <h1>BINA</h1>
+        <p>Belgo-Indian Network for Astronomy & Astrophysics</p>
+    </div>
+    <nav id="nav-menu">
+    <ul style="display: flex; align-items: center;">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="partners.html">Partners</a>
+            <span class="dropdown-toggle"></span>
+            <div class="dropdown-content">
+                <div class="nested-dropdown">
+                    <a href="belgian_partners.html">Belgian Partner Institutes</a>
+                    <div class="nested-dropdown-content">
+                        <a href="ku_leuven.html">KU Leuven</a>
+                        <a href="rob.html">ROB</a>
+                        <a href="uantwerpen.html">UAntwerpen</a>
+                        <a href="ugent.html">UGent</a>
+                        <a href="ulb.html">ULB</a>
+                        <a href="uliege.html">ULiege</a>
+                    </div>
+                </div>
+                <div class="nested-dropdown">
+                    <a href="indian_partners.html">Indian Partner Institutes</a>
+                    <div class="nested-dropdown-content">
+                        <a href="aries.html">ARIES</a>
+                        <a href="du.html">DU</a>
+                        <a href="iia.html">IIA</a>
+                        <a href="iist.html">IIST</a>
+                        <a href="iucaa.html">IUCAA</a>
+                        <a href="ku.html">KU</a>
+                        <a href="ncra_tifr.html">NCRA-TIFR</a>
+                        <a href="prl.html">PRL</a>
+                        <a href="prsu.html">PRSU</a>
+                        <a href="snbncbs.html">SNBNCBS</a>
+                        <a href="tifr.html">TIFR</a>
+                        <a href="uoc.html">UOC</a>
+                        <a href="ursc.html">URSC</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="instrumentation.html">Instrumentation</a>
+            <span class="dropdown-toggle"></span>
+            <div class="dropdown-content">
+                <div class="nested-dropdown">
+                    <a href="indo_belgian_telescopes.html">Indo-Belgian Telescopes</a>
+                    <div class="nested-dropdown-content">
+                        <a href="dot_aries.html">DOT@ARIES</a>
+                        <a href="ilmt_aries.html">ILMT@ARIES</a>
+                    </div>
+                </div>
+                <div class="nested-dropdown">
+                    <a href="telescopes.html">Telescopes</a>
+                    <div class="nested-dropdown-content">
+                        <a href="trappist_south.html">TRAPPIST-SOUTH@ESO</a>
+                        <a href="trappist_north.html">TRAPPIST-North@J43</a>
+                        <a href="mercator_rmo.html">Mercator@RMO</a>
+                    </div>
+                </div>
+                <div class="nested-dropdown">
+                    <a href="indian_telescopes.html">Indian Telescopes</a>
+                    <div class="nested-dropdown-content">
+                        <a href="0_5m_prl.html">0.5-m@PRL</a>
+                        <a href="1_04m_aries.html">1.04-m@ARIES</a>
+                        <a href="1_2m_prl.html">1.2-m@PRL</a>
+                        <a href="1_3m_aries.html">1.3-m@ARIES</a>
+                        <a href="hct_iia.html">HCT@IIA</a>
+                        <a href="gmrt_ncra_tifr.html">GMRT@NCRA-TIFR</a>
+                    </div>
+                </div>
+                <div class="nested-dropdown">
+                    <a href="indian_satellite.html">Indian Satellite</a>
+                    <div class="nested-dropdown-content">
+                        <a href="astrosat.html">AstroSat</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li><a href="funding.html">Funding</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li class="dropdown">
+            <a href="projects.html">Projects</a>
+            <span class="dropdown-toggle"></span>
+            <div class="dropdown-content">
+                <a href="asteroseismology.html">Asteroseismology</a>
+                <a href="orbit.html">ORBIT</a>
+                <a href="nucleosynthesis.html">Nucleosynthesis</a>
+                <a href="multi_wavelength_study.html">Multi-wavelength Study of Massive Stars</a>
+                <a href="instrumentation.html">Instrumentation</a>
+                <a href="reverberation_mapping.html">Reverberation Mapping</a>
+            </div>
+        </li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <!-- Logo Added Here -->
+        <li class="header-logo">
+            <img src="125.png" alt="BINA Logo" class="bina-logo">
+        </li>
+    </ul>
+</nav>
+
+
+
+</header>
+
+<main>
+    <section class="content">
+        <h2>Royal Observatory of Belgium (ROB)</h2>
+        <div class="image-container">
+    <img src="ROB.png" alt="Royal Observatory of Belgium (ROB)" class="activity-image">
+    
+</div>
+
+
+        <div class="highlight-box">
+            <h3>Research Areas of ROB(<a href="https://www.astro.oma.be/en/">website</a>)</h3>
+            <table class="info-table" style="margin: 0 auto;"> <!-- Center align table -->
+                <tr>
+                    <th>OD1</th>
+                    <td>Reference Systems and Planetology (<a href="#">website</a>)</td>
+                </tr>
+                <tr>
+                    <th>OD2</th>
+                    <td>Seismology and Gravimetry (<a href="#">website</a>)</td>
+                </tr>
+                <tr>
+                    <th>OD3</th>
+                    <td>Astronomy and Astrophysics (<a href="https://aa.oma.be/">website</a>)</td>
+                </tr>
+                <tr>
+                    <th>OD4</th>
+                    <td>Solar Physics and Space Weather (<a href="#">website</a>)</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="highlight-box">
+            <h3>Astronomy and Astrophysics</h3>
+            <div class="astronomy-list">
+                <div class="astronomy-item">
+                    <i class="fas fa-star"></i>
+                    Massive star (3D radiative transfer modeling, stellar winds, colliding winds, hypergiants)
+                </div>
+                <div class="astronomy-item">
+                    <i class="fas fa-star"></i>
+                    Stellar evolution (AGB stars, planetary nebulae)
+                </div>
+                <div class="astronomy-item">
+                    <i class="fas fa-star"></i>
+                    Stellar rotation (intermediate-mass stars)
+                </div>
+                <div class="astronomy-item">
+                    <i class="fas fa-star"></i>
+                    Variable stars (Classical Cepheids, type-II Cepheids, delta Scuti stars, gamma Doradus stars, beta Cephei stars, Slowly Pulsating B stars)
+                </div>
+                <div class="astronomy-item">
+                    <i class="fas fa-star"></i>
+                    Binary stars (Algols, binaries with pulsating components)
+                </div>
+                <div class="astronomy-item">
+                    <i class="fas fa-star"></i>
+                    Digitization
+                </div>
+            </div>
+        </div>
+
+        <div class="highlight-box">
+            <h3>Instrumentation</h3>
+            <p>As a partner institute of the HERMES consortium, ROB contributes to:</p>
+            <div class="instrumentation-content">
+                <div>
+                    <i class="fas fa-telescope"></i>
+                    Development of advanced spectrographs
+                </div>
+                <div>
+                    <i class="fas fa-microscope"></i>
+                    Research on high-resolution imaging
+                </div>
+                <div>
+                    <i class="fas fa-satellite-dish"></i>
+                    Calibration and data analysis techniques
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Peter De Cat (Ringlaan 3, B-1180 Brussels, Belgium), 
+                <a href="mailto:peter.DeCat@oma.be">peter.DeCat@oma.be</a>, 
+                +32 2 3730675
+            </p>
+        </div>
+        
+    </section>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2024 BINA. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

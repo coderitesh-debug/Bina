@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - BINA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Additional CSS for Enhanced Layout */
+
+        .content-section {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #f0f4fa;
+            border-radius: 10px;
+            border: 1px solid #B0C4DE;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            color: #2A4D8F;
+            margin-bottom: 15px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .publications-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .publications-list li {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .publication-item h4 {
+            font-size: 1.2em;
+            color: #2A4D8F;
+            margin-bottom: 5px;
+        }
+
+        .publication-item p {
+            margin: 5px 0;
+            color: #333;
+        }
+
+        .publication-item a {
+            color: #2A4D8F;
+            text-decoration: none;
+        }
+
+        .publication-item a:hover {
+            text-decoration: underline;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            margin: 0 5px;
+            background-color: #2A4D8F;
+            color: #ffffff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .tab:hover {
+            background-color: #1E2A5E;
+        }
+
+        .tab.active {
+            background-color: #1E2A5E;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-left">
+        <h1>BINA</h1>
+        <p>Belgo-Indian Network for Astronomy & Astrophysics</p>
+    </div>
+  <nav id="nav-menu">
+    <ul style="display: flex; align-items: center;">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="partners.html">Partners</a>
+            <span class="dropdown-toggle"></span>
+            <div class="dropdown-content">
+                <div class="nested-dropdown">
+                    <a href="belgian_partners.html">Belgian Partner Institutes</a>
+                    <div class="nested-dropdown-content">
+                        <a href="ku_leuven.html">KU Leuven</a>
+                        <a href="rob.html">ROB</a>
+                        <a href="uantwerpen.html">UAntwerpen</a>
+                        <a href="ugent.html">UGent</a>
+                        <a href="ulb.html">ULB</a>
+                        <a href="uliege.html">ULiege</a>
+                    </div>
+                </div>
+                <div class="nested-dropdown">
+                    <a href="indian_partners.html">Indian Partner Institutes</a>
+                    <div class="nested-dropdown-content">
+                        <a href="aries.html">ARIES</a>
+                        <a href="du.html">DU</a>
+                        <a href="iia.html">IIA</a>
+                        <a href="iist.html">IIST</a>
+                        <a href="iucaa.html">IUCAA</a>
+                        <a href="ku.html">KU</a>
+                        <a href="ncra_tifr.html">NCRA-TIFR</a>
+                        <a href="prl.html">PRL</a>
+                        <a href="prsu.html">PRSU</a>
+                        <a href="snbncbs.html">SNBNCBS</a>
+                        <a href="tifr.html">TIFR</a>
+                        <a href="uoc.html">UOC</a>
+                        <a href="ursc.html">URSC</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="instrumentation.html">Instrumentation</a>
+            <span class="dropdown-toggle"></span>
+            <div class="dropdown-content">
+                <div class="nested-dropdown">
+                    <a href="indo_belgian_telescopes.html">Indo-Belgian Telescopes</a>
+                    <div class="nested-dropdown-content">
+                        <a href="dot_aries.html">DOT@ARIES</a>
+                        <a href="ilmt_aries.html">ILMT@ARIES</a>
+                    </div>
+                </div>
+                <div class="nested-dropdown">
+                    <a href="telescopes.html">Telescopes</a>
+                    <div class="nested-dropdown-content">
+                        <a href="trappist_south.html">TRAPPIST-SOUTH@ESO</a>
+                        <a href="trappist_north.html">TRAPPIST-North@J43</a>
+                        <a href="mercator_rmo.html">Mercator@RMO</a>
+                    </div>
+                </div>
+                <div class="nested-dropdown">
+                    <a href="indian_telescopes.html">Indian Telescopes</a>
+                    <div class="nested-dropdown-content">
+                        <a href="0_5m_prl.html">0.5-m@PRL</a>
+                        <a href="1_04m_aries.html">1.04-m@ARIES</a>
+                        <a href="1_2m_prl.html">1.2-m@PRL</a>
+                        <a href="1_3m_aries.html">1.3-m@ARIES</a>
+                        <a href="hct_iia.html">HCT@IIA</a>
+                        <a href="gmrt_ncra_tifr.html">GMRT@NCRA-TIFR</a>
+                    </div>
+                </div>
+                <div class="nested-dropdown">
+                    <a href="indian_satellite.html">Indian Satellite</a>
+                    <div class="nested-dropdown-content">
+                        <a href="astrosat.html">AstroSat</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li><a href="funding.html">Funding</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li class="dropdown">
+            <a href="projects.html">Projects</a>
+            <span class="dropdown-toggle"></span>
+            <div class="dropdown-content">
+                <a href="asteroseismology.html">Asteroseismology</a>
+                <a href="orbit.html">ORBIT</a>
+                <a href="nucleosynthesis.html">Nucleosynthesis</a>
+                <a href="multi_wavelength_study.html">Multi-wavelength Study of Massive Stars</a>
+                <a href="instrumentation.html">Instrumentation</a>
+                <a href="reverberation_mapping.html">Reverberation Mapping</a>
+            </div>
+        </li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <!-- Logo Added Here -->
+        <li class="header-logo">
+            <img src="125.png" alt="BINA Logo" class="bina-logo">
+        </li>
+    </ul>
+</nav>
+
+</header>
+
+<main>
+    <section class="content">
+        <h2>Publications</h2>
+        <p>Explore the scientific publications and research papers produced by BINA collaborations.</p>
+        
+        <!-- Section for Page 1 -->
+        <div class="content-section" id="page1">
+            <h3 class="section-title">Page 1</h3>
+            <ul class="publications-list">
+                <li class="publication-item">
+                    <h4>Long-term soft and hard X-ray investigation of the colliding wind WN+O binary WR 25</h4>
+                    <p><strong>Authors:</strong> Arora B., Pandey J.C., De Becker M.</p>
+                    <p><strong>Publication Date:</strong> August 2019</p>
+                </li>
+                <li class="publication-item">
+                    <h4>Investigation of the WR 11 field at decimeter wavelengths</h4>
+                    <p><strong>Authors:</strong> Benaglia P., del Palacio S., Ishwara-Chandra C.H., De Becker M., Isequilla N.L., Saponara J.</p>
+                    <p><strong>Publication Date:</strong> May 2019</p>
+                </li>
+                <li class="publication-item">
+                    <h4>The zenithal 4-m International Liquid Mirror Telescope: a unique facility for supernova studies</h4>
+                    <p><strong>Authors:</strong> Kumar B., Pandey K.L., Pandey S.B., Hickson P., Borra E.F., Anupama G.C., Surdej J.</p>
+                    <p><strong>Publication Date:</strong> May 2018</p>
+                </li>
+                <li class="publication-item">
+                    <h4>Proceedings of the 1st BINA workshop: Instrumentation and Science with the 3.6-m DOT and 4-m ILMT telescopes</h4>
+                    <p><strong>Authors:</strong> Surdej J., Hickson P., Borra E., Swings J-P., Habranek S., Akhrarov T., Bartczak P., Chand H., De Becker M., et al.</p>
+                    <p><strong>Publication Date:</strong> April 2018</p>
+                </li>
+                <li class="publication-item">
+                    <h4>Supernovae study: Context of the 4-m International Liquid Mirror Telescope</h4>
+                    <p><strong>Authors:</strong> Kumar B., Pandey S.B., Pandey K.L., Anupama G.C., Surdej J.</p>
+                    <p><strong>Publication Date:</strong> April 2018</p>
+                </li>
+                <li class="publication-item">
+                    <h4>Present status of the 4-m ILMT data reduction pipeline: application to space debris detection and characterization</h4>
+                    <p><strong>Authors:</strong> Pradhan B., Delchambre L., Hickson H.T., Akhnov T., Bartczak P., Kumar B., Surdej J.</p>
+                    <p><strong>Publication Date:</strong> April 2018</p>
+                </li>
+                <li class="publication-item">
+    <h4>A study of pulsation & rotation in a sample of A-K type stars in the Kepler field</h4>
+    <p><strong>Authors:</strong> Chowdhury S., Joshi S., Engelbrecht C.A., De Cat P., Joshi Y.C., Paul K.T.</p>
+    <p><strong>Publication Date:</strong> April 2018</p>
+</li>
+<li class="publication-item">
+    <h4>Proceedings of the 1st BINA workshop: Instrumentation and Science with the 3.6-m DOT and 4-m ILMT telescopes</h4>
+    <p><strong>Authors:</strong> De Cat P., Surdej J., Omar A., De Becker M., Joshi S.</p>
+    <p><strong>Publication Date:</strong> April 2018</p>
+</li>
+<li class="publication-item">
+    <h4>Polarization study of massive binaries with the ARIES-1.04 m telescope</h4>
+    <p><strong>Authors:</strong> Arora B., Pandey J.C., Joshi A., De Becker M.</p>
+    <p><strong>Publication Date:</strong> October 2019</p>
+</li>
+<li class="publication-item">
+    <h4>Prospects for radio observations of Particle-Accelerating Colliding-Wind Binaries with the Giant Metrewave Radio Telescope</h4>
+    <p><strong>Authors:</strong> De Becker M., Ishwara-Chandra C.H., Benaglia P.</p>
+    <p><strong>Publication Date:</strong> October 2019</p>
+</li>
+<li class="publication-item">
+    <h4>GMRT survey of Cygnus OB2 region</h4>
+    <p><strong>Authors:</strong> Ishwara-Chandra C.H., De Becker M., Tpi A.</p>
+    <p><strong>Publication Date:</strong> October 2019</p>
+</li>
+
+            </ul>
+        </div>
+
+        <!-- Section for Page 2 -->
+        <div class="content-section" id="page2" style="display:none;">
+            <h3 class="section-title">Page 2</h3>
+            <ul class="publications-list">
+                <li class="publication-item">
+                    <h4>The spectroscopic multiplicity fraction in a sample of A/F-type (candidate) hybrid stars from the Kepler mission</h4>
+                    <p><strong>Authors:</strong> Lampens P., Vermeylen L., De Cat P., et al.</p>
+                    <p><strong>Publication Date:</strong> January 2020</p>
+                </li>
+                <li class="publication-item">
+                    <h4>Starspots and rotation velocities of normal A- and Am- stars</h4>
+                    <p><strong>Authors:</strong> Trust O., Jurua E., De Cat P., Joshi S.</p>
+                    <p><strong>Publication Date:</strong> January 2020</p>
+                </li>
+                <li class="publication-item">
+                    <h4>Spatially separated continuum sources revealed by microlensing in the gravitationally lensed broad absorption line quasar SDSS J081830.46+060138.0</h4>
+                    <p><strong>Authors:</strong> Hudemskorb S., Sluse D., Kumar P.</p>
+                    <p><strong>Publication Date:</strong> January 2020</p>
+                </li>
+                <li class="publication-item">
+                    <h4>Gaia Gral: Gaia DR2 Gravitational Lens Systems. V. Doubly-imaged QSOs discovered from entropy and wavelets</h4>
+                    <p><strong>Authors:</strong> Krona-Martins A., Graham M.J., Stern D., Delchambre L., Ducourant C., Teixeira R., Surdej J., et al.</p>
+                    <p><strong>Publication Date:</strong> December 2019</p>
+                </li>
+                <li class="publication-item">
+                    <h4>Proceedings of the 2nd BINA workshop: BINA as an expanding international collaboration</h4>
+                    <p><strong>Authors:</strong> De Cat P., Lampens P., Joshi S., De Becker M., Jorissen A.</p>
+                    <p><strong>Publication Date:</strong> October 2019</p>
+                </li>
+                <li class="publication-item">
+                    <h4>Overview of the BINA Activities</h4>
+                    <p><strong>Authors:</strong> Joshi S., De Cat P.</p>
+                    <p><strong>Publication Date:</strong> October 2019</p>
+                </li>
+                <li class="publication-item">
+                    <h4>Optical characterisation and Radial velocity monitoring of Exoplanet and Eclipsing Binary</h4>
+                    <p><strong>Authors:</strong> Joshi Y.C., De Cat P., Panchal A., Goswami A., Lampens P., Vermeylen L., Maurya J.</p>
+                    <p><strong>Publication Date:</strong> October 2019</p>
+                </li>
+                <li class="publication-item">
+    <h4>Rotation and spots in normal A and Am/Fm stars</h4>
+    <p><strong>Authors:</strong> Trust O., Jurua E., De Cat P., Joshi S.</p>
+    <p><strong>Publication Date:</strong> March 2020</p>
+</li>
+<li class="publication-item">
+    <h4>HERMeS spectroscopy of normal A and Am stars</h4>
+    <p><strong>Authors:</strong> Trust O., Jurua E., De Cat P., Joshi S., Lampens P.</p>
+    <p><strong>Publication Date:</strong> July 2021</p>
+</li>
+<li class="publication-item">
+    <h4>Orbital solutions derived from radial velocities and time delays for four Kepler systems with A/F-type (candidate) hybrid pulsators</h4>
+    <p><strong>Authors:</strong> Lampens P., Vermeylen L., Frémat Y., Skarka M., Samadi-Ghadim A., Bognár Zs., Lehmann H., De Cat P., Goswami A., Dumortier L.</p>
+    <p><strong>Publication Date:</strong> March 2021</p>
+</li>
+<li class="publication-item">
+    <h4>Quasar catalogue for the astrometric calibration of the forthcoming ILMT survey</h4>
+    <p><strong>Authors:</strong> Mandal A.K., Pradhan B., Surdej J., Stalin C.S., Sagar R., Mathew B.</p>
+    <p><strong>Publication Date:</strong> September 2020</p>
+</li>
+<li class="publication-item">
+    <h4>Megarhertz emission of massive early-type stars in the Cygnus region</h4>
+    <p><strong>Authors:</strong> Benaglia P., De Becker M., Ishwara-Chandra C.H., Intema H.T., Isequilla N.L.</p>
+    <p><strong>Publication Date:</strong> July 2020</p>
+</li>
+
+            </ul>
+        </div>
+
+        <!-- Section for Page 3 -->
+        <div class="content-section" id="page3" style="display:none;">
+            <h3 class="section-title">Page 3</h3>
+            <ul class="publications-list">
+                <li class="publication-item">
+                    <h4>Upcoming 4m ILMT facility and data reduction pipeline testing</h4>
+                    <p><strong>Authors:</strong> Kumar B., Negi V., Altafivadi B., Mishra S., Pradhan B., Mishra K., Hickson P., Surdej J.</p>
+                    <p><strong>Publication Date:</strong> June 2022</p>
+                </li>
+                <li class="publication-item">
+                    <h4>Gaia Gral: Gaia DR2 Gravitational Lens Systems. VII. XMM-Newton Observations of Lensed Quasars</h4>
+                    <p><strong>Authors:</strong> Connor T., Stern D., Kroon-Martins A., Digrowski S.G., Graham M.J., Walton D.J., Delchambre L., Ducourant C., Teixeira R., LeCampion J-F., et al.</p>
+                    <p><strong>Publication Date:</strong> March 2022</p>
+                </li>
+                <li class="publication-item">
+                    <h4>Study of chemically peculiar stars – I. High-resolution spectroscopy and K2 photometry of Am stars in the region of M44</h4>
+                    <p><strong>Authors:</strong> Joshi S., Trust O., Semenko E., Williams P.F., Lampens P., et al.</p>
+                    <p><strong>Publication Date:</strong> March 2022</p>
+                </li>
+                <li class="publication-item">
+                    <h4>Quest for the Upcoming Periastron Passage of an Episodic Dust Maker and Particle-accelerating Colliding-wind Binary: WR 125</h4>
+                    <p><strong>Authors:</strong> Arora B., Pandey J.C., De Becker M., Chakradhari N.K., Sharma S., Kumar B.</p>
+                    <p><strong>Publication Date:</strong> December 2021</p>
+                </li>
+                <li class="publication-item">
+                    <h4>Gaia Gral: Gaia DR2 Gravitational Lens Systems. VI. Spectroscopic Confirmation and Modeling of Quadruply Imaged Lensed Quasars</h4>
+                    <p><strong>Authors:</strong> Stern D., Digrowski S.G., Krone-Martins A., Sluse D., Delchambre L., Ducourant C., Teixeira R., Surdej J., Boehm C., et al.</p>
+                    <p><strong>Publication Date:</strong> November 2021</p>
+                </li>
+                <li class="publication-item">
+    <h4>Gaia Gral: Gaia DR2 Gravitational Lens Systems. VI. XMM-Newton Observations of Lensed Quasars</h4>
+    <p><strong>Authors:</strong> Connor T., Stern D., Kroon-Martins A., Digrowski S.G., Graham M.J., Walton D.J., Delchambre L., Ducourant C., Teixeira R., LeCampion J-F., et al.</p>
+    <p><strong>Publication Date:</strong> March 2022</p>
+</li>
+<li class="publication-item">
+    <h4>Study of chemically peculiar stars – I. High-resolution spectroscopy and K2 photometry of Am stars in the region of M44</h4>
+    <p><strong>Authors:</strong> Joshi S., Trust O., Semenko E., Williams P.F., Lampens P., et al.</p>
+    <p><strong>Publication Date:</strong> March 2022</p>
+</li>
+<li class="publication-item">
+    <h4>Quest for the Upcoming Periastron Passage of an Episodic Dust Maker and Particle-accelerating Colliding-wind Binary: WR 125</h4>
+    <p><strong>Authors:</strong> Arora B., Pandey J.C., De Becker M., Chakradhari N.K., Sharma S., Kumar B.</p>
+    <p><strong>Publication Date:</strong> December 2021</p>
+</li>
+<li class="publication-item">
+    <h4>Gaia Gral: Gaia DR2 Gravitational Lens Systems. VI. Spectroscopic Confirmation and Modeling of Quadruply Imaged Lensed Quasars</h4>
+    <p><strong>Authors:</strong> Stern D., Digrowski S.G., Krone-Martins A., Sluse D., Delchambre L., Ducourant C., Teixeira R., Surdej J., Boehm C., et al.</p>
+    <p><strong>Publication Date:</strong> November 2021</p>
+</li>
+<li class="publication-item">
+    <h4>HERMES spectroscopy of normal A and Am stars</h4>
+    <p><strong>Authors:</strong> Trust O., Jurua E., De Cat P., Joshi S., Lampens P.</p>
+    <p><strong>Publication Date:</strong> July 2021</p>
+</li>
+
+            </ul>
+        </div>
+
+        <!-- Tabs for Navigation -->
+        <div class="tabs">
+            <div class="tab active" onclick="showPage('page1')">Page 1</div>
+            <div class="tab" onclick="showPage('page2')">Page 2</div>
+            <div class="tab" onclick="showPage('page3')">Page 3</div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <!-- Contact Section -->
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+        <P>       Email: binaconsortium@gmail.com       </P>    
+        </div>
+                  <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 BINA. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script>
+    // JavaScript to handle tab switching
+    function showPage(pageId) {
+        // Hide all content sections
+        document.getElementById('page1').style.display = 'none';
+        document.getElementById('page2').style.display = 'none';
+        document.getElementById('page3').style.display = 'none';
+
+        // Show the selected page
+        document.getElementById(pageId).style.display = 'block';
+
+        // Update active tab
+        var tabs = document.querySelectorAll('.tab');
+        tabs.forEach(function(tab) {
+            tab.classList.remove('active');
+        });
+        document.querySelector('.tab[onclick="showPage(\'' + pageId + '\')"]').classList.add('active');
+    }
+</script>
+</body>
+</html>
